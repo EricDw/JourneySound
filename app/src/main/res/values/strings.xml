@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">Journey Sound</string>
+
+    <!-- Menus -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Text views-->
+    <string name="JourneySound_Email">journeysoundcanada@gmail.com</string>
+    <string name="JourneySound_Facebook">Journey Sound</string>
+    <string name="JourneySound_Twitter">\@JourneySound1</string>
+    <string name="JourneySound_Instagram">\@zyke_journey</string>
+    <string name="JourneySound_LinkedIn">Fada Zyke Journey Sound</string>
+
+    <!-- URLs -->
+    <string name="JourneySound_Facebook_Link">https://www.facebook.com/Journey-Sound-215755911827484/timeline/</string>
+    <string name="JourneySound_Twitter_Link">https://twitter.com/Journeysound1</string>
+    <string name="JourneySound_LinkedIn_Link">https://ca.linkedin.com/pub/fada-zyke-journey-sound/5a/946/a13</string>
+    <string name="JourneySound_Instagram_Link">https://instagram.com/zyke_journey/</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=com.publicmethod.eric.JourneySound&amp;hl=en</string>
+    <string name="play_store_link_bitly">http://bit.ly/JourneySound</string>
+
+    <!-- Phone Number-->
+    <string name="JourneySound_phoneNumber">14167298018</string>
+
+    <!-- Content Descriptions-->
+    <string name="Content_description_Image_button_Email">Email Journey Sound button</string>
+    <string name="Content_description_Image_button_Facebook">Connect with Journey Sound button</string>
+    <string name="Content_description_Image_button_Twitter">Follow Journey Sound on Twitter button</string>
+    <string name="Content_description_Image_button_Instagram">Follow Journey Sound on Instagram button</string>
+    <string name="Content_description_Image_button_Linkedin">Connect with Journey Sound on Linkedin button</string>
+    <string name="Open_link_chooser_title">Open url with…</string>
+    <string name="data_type_mime">text/plain</string>
+    <string name="mailTo">mailto:</string>
+    <string name="chooser_title_email">Send mail with…</string>
+    <string name="Error_message_email">There is no email client installed.</string>
+    <string name="Error_message_no_application">There is no application that supports this feature</string>
+    <string name="chooser_title_playstore">Share app with…</string>
+
+    <!-- Descriptions of services-->
+    <string name="services_title">Services</string>
+    <string name="services_description">
+        &#8226; DJ services (Corporate &amp; Social Events) \n\n
+        &#8226; Events Planning (Assistance) \n \n
+        &#8226; Promotion CD (Duplication &amp; Print) \n \n
+        &#8226; Audio Setup \n \n
+        &#8226; Video &amp; Picture Services \n \n
+        &#8226; Flyers (Designing &amp; Program Invitations)
+    </string>
+
+    <string name="services_description_no_bullets">
+         \n DJ services (Corporate &amp; Social Events)\n\n
+         Events Planning (Assistance) \n \n
+         Promotion CD (Duplication &amp; Print) \n \n
+         Audio Setup \n \n
+         Video &amp; Picture Services \n \n
+         Flyers (Designing &amp; Program Invitations) \n
+    </string>
+    <string name="button_share_text">SHARE</string>
+
+</resources>
