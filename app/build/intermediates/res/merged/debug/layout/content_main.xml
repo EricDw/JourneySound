@@ -1,180 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    android:id="@+id/nestedScrollView"
+
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true"
-    android:fitsSystemWindows="true"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <LinearLayout
-        android:orientation="vertical"
+        <import type="com.publicmethod.owner.JourneySound.viewmodels.MainActivityViewModel"/>
+
+        <variable
+            name="viewModel"
+            type="MainActivityViewModel"/>
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.MainActivity"
+        >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:fitsSystemWindows="true">
-
-        <TextView
-            android:id="@+id/textView_services_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/services_title"
-            android:textColor="@color/primary_text"
-            android:textSize="25sp"
-            />
-
-        <TextView
-            android:id="@+id/textView_services_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_services_title"
-            android:layout_centerHorizontal="true"
-            android:gravity="start"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:textSize="15sp"
-            android:textColor="@color/primary_text"
-            android:text="@string/services_description_no_bullets"
-            />
-
-        <View
-            android:id="@+id/imageView_divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_below="@+id/textView_services_description"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/primary"
-            />
-
-        <GridLayout
-            android:id="@+id/layout_grid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView_divider"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginStart="8dp"
-            android:columnCount="2"
-            android:rowCount="7">
-
-            <ImageButton
-                android:id="@+id/button_image_email"
-                style="@style/GridViewImageButtonStyle"
-                android:layout_column="0"
-                android:layout_row="0"
-                android:contentDescription="@string/Content_description_Image_button_Email"
-                android:src="@mipmap/ic_gmail_yellow"
-                />
-
-
-            <TextView
-                android:layout_column="1"
-                android:text="@string/JourneySound_Email"
-                style="@style/socialMediaItem"
-                />
-
-            <ImageButton
-                android:id="@+id/button_image_facebook"
-                style="@style/GridViewImageButtonStyle"
-                android:layout_column="0"
-                android:layout_row="2"
-                android:src="@mipmap/ic_facebook_box_yellow"
-                />
-
-            <TextView
-                android:layout_column="1"
-                android:layout_row="2"
-                android:text="@string/JourneySound_Facebook"
-                style="@style/socialMediaItem"
-
-                />
-
-            <ImageButton
-                android:id="@+id/button_image_twitter"
-                style="@style/GridViewImageButtonStyle"
-                android:layout_column="0"
-                android:layout_row="3"
-                android:src="@mipmap/ic_twitter_box_yellow"
-                />
-
-            <TextView
-                android:layout_column="1"
-                android:layout_row="3"
-                android:text="@string/JourneySound_Twitter"
-                style="@style/socialMediaItem"
-
-                />
-
-            <ImageButton
-                android:id="@+id/button_image_instagram"
-                style="@style/GridViewImageButtonStyle"
-                android:layout_column="0"
-                android:layout_row="4"
-                android:src="@mipmap/ic_instagram_yellow"
-                />
-
-            <TextView
-                android:layout_column="1"
-                android:layout_row="4"
-                android:text="@string/JourneySound_Instagram"
-                style="@style/socialMediaItem"
-
-                />
-
-            <ImageButton
-                android:id="@+id/button_image_linkedIn"
-                style="@style/GridViewImageButtonStyle"
-                android:layout_column="0"
-                android:layout_row="5"
-                android:src="@mipmap/ic_linkedin_box_yellow"
-                />
-
-            <TextView
-                android:layout_column="1"
-                android:layout_row="5"
-                android:text="@string/JourneySound_LinkedIn"
-                style="@style/socialMediaItem"
-
-                />
-        </GridLayout>
-
-
-    </RelativeLayout>
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button_share"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:background="@color/accent"
-            android:text="@string/button_share_text"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fitsSystemWindows="true">
+
+                <TextView
+                    android:id="@+id/textView_services_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/services_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_services_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_services_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="start"
+                    android:text="@string/services_description_no_bullets"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15sp"
+                    />
+
+                <View
+                    android:id="@+id/imageView_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textView_services_description"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary"
+                    />
+
+                <GridLayout
+                    android:id="@+id/layout_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_divider"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="8dp"
+                    android:columnCount="2"
+                    android:rowCount="8">
 
 
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:text="@string/JourneySound_Email"
+                        />
 
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView><!-- From: file:/F:/Workspace/JourneySound/app/src/main/res/layout/content_main.xml -->
+                    <ImageButton
+                        android:id="@+id/button_image_facebook"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:onClick="@{viewModel.openFaceBookLink}"
+                        app:srcCompat="@drawable/facebook_box"
+                        />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        android:text="@string/JourneySound_Facebook"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_twitter"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:onClick="@{viewModel.openTwitterLink}"
+                        app:srcCompat="@drawable/twitter_box"
+                        />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="3"
+                        android:text="@string/JourneySound_Twitter"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_instagram"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="4"
+                        android:onClick="@{viewModel.openInstagramLink}"
+                        app:srcCompat="@drawable/instagram"
+                        />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="4"
+                        android:text="@string/JourneySound_Instagram"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_linkedIn"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="5"
+                        android:onClick="@{viewModel.openLinkedInLink}"
+                        app:srcCompat="@drawable/linkedin_box"
+                        />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="5"
+                        android:text="@string/JourneySound_LinkedIn"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_email"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:contentDescription="@string/Content_description_Image_button_Email"
+                        android:onClick="@{viewModel.sendEmail}"
+                        app:srcCompat="@drawable/gmail"
+                        />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="6"
+                        android:text="@string/JourneySound_GooglePlus"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_googleplus"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="6"
+                        android:contentDescription="@string/Content_description_Image_button_Email"
+                        android:onClick="@{viewModel.openGooglePlusLink}"
+                        app:srcCompat="@drawable/google_plus_box"
+                        />
+                </GridLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_share"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/accent"
+                android:onClick="@{viewModel.sharePlayStoreLink}"
+                android:text="@string/button_share_text"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

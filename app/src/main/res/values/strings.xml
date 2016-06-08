@@ -11,6 +11,7 @@
     <string name="JourneySound_Twitter">\@JourneySound1</string>
     <string name="JourneySound_Instagram">\@zyke_journey</string>
     <string name="JourneySound_LinkedIn">Fada Zyke Journey Sound</string>
+    <string name="JourneySound_GooglePlus">JOURNEY SOUND CANADA</string>
 
     <!-- URLs -->
     <string name="JourneySound_Facebook_Link">https://www.facebook.com/Journey-Sound-215755911827484/timeline/</string>
@@ -19,6 +20,7 @@
     <string name="JourneySound_Instagram_Link">https://instagram.com/zyke_journey/</string>
     <string name="play_store_link">https://play.google.com/store/apps/details?id=com.publicmethod.eric.JourneySound&amp;hl=en</string>
     <string name="play_store_link_bitly">http://bit.ly/JourneySound</string>
+    <string name="JourneySound_GooglePlus_Link">https://plus.google.com/+JOURNEYSOUNDCANADA</string>
 
     <!-- Phone Number-->
     <string name="JourneySound_phoneNumber">14167298018</string>
