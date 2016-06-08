@@ -19,16 +19,18 @@ import com.publicmethod.owner.JourneySound.R;
 public class MainActivityViewModel extends BaseObservable {
     private Context mContext;
 
-    private String mFacebookLink, mTwitterLink,
-            mInstagramLink, mLinkedInLink, mPhoneNumber;
+    private String mEmail, mFacebookLink, mTwitterLink,
+            mInstagramLink, mLinkedInLink, mGooglePlusLink, mPhoneNumber;
 
 
     public MainActivityViewModel(Context context) {
         mContext = context;
+        mEmail = context.getString(R.string.JourneySound_Email);
         mFacebookLink = context.getString(R.string.JourneySound_Facebook_Link);
         mTwitterLink = context.getString(R.string.JourneySound_Twitter_Link);
         mInstagramLink = context.getString(R.string.JourneySound_Instagram_Link);
         mLinkedInLink = context.getString(R.string.JourneySound_LinkedIn_Link);
+        mGooglePlusLink = context.getString(R.string.JourneySound_GooglePlus_Link);
         mPhoneNumber = context.getString(R.string.JourneySound_phoneNumber);
     }
 
@@ -67,7 +69,7 @@ public class MainActivityViewModel extends BaseObservable {
 
     public void sendEmail(View view) {
 
-        String[] TO = {view.getContext().getString(R.string.JourneySound_Email)};
+        String[] TO = {mEmail};
         String[] CC = {""};
 
         Intent sendEmailIntent = new Intent(Intent.ACTION_SEND);
@@ -90,7 +92,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openFaceBookLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Facebook_Link)));
+        sendIntent.setData(Uri.parse(mFacebookLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -99,10 +101,11 @@ public class MainActivityViewModel extends BaseObservable {
             Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
         }
     }
+
     public void openTwitterLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Twitter_Link)));
+        sendIntent.setData(Uri.parse(mTwitterLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -111,10 +114,11 @@ public class MainActivityViewModel extends BaseObservable {
             Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
         }
     }
+
     public void openInstagramLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Instagram_Link)));
+        sendIntent.setData(Uri.parse(mInstagramLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -123,10 +127,11 @@ public class MainActivityViewModel extends BaseObservable {
             Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
         }
     }
+
     public void openLinkedInLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_LinkedIn_Link)));
+        sendIntent.setData(Uri.parse(mLinkedInLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -135,10 +140,11 @@ public class MainActivityViewModel extends BaseObservable {
             Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
         }
     }
+
     public void openGooglePlusLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_GooglePlus_Link)));
+        sendIntent.setData(Uri.parse(mGooglePlusLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
