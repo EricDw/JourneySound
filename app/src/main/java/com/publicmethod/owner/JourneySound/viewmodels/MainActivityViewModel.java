@@ -20,7 +20,7 @@ public class MainActivityViewModel extends BaseObservable {
     private Context mContext;
 
     private String mFacebookLink, mTwitterLink,
-            mInstagramLink, mLinkedInLink, mPhoneNumber;
+            mInstagramLink, mLinkedInLink, mGooglePlusLink, mPhoneNumber;
 
 
     public MainActivityViewModel(Context context) {
@@ -30,6 +30,7 @@ public class MainActivityViewModel extends BaseObservable {
         mInstagramLink = context.getString(R.string.JourneySound_Instagram_Link);
         mLinkedInLink = context.getString(R.string.JourneySound_LinkedIn_Link);
         mPhoneNumber = context.getString(R.string.JourneySound_phoneNumber);
+        mGooglePlusLink = context.getString(R.string.JourneySound_GooglePlus_Link);
     }
 
     public void callJourneySound(View view) {
@@ -90,7 +91,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openFaceBookLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Facebook_Link)));
+        sendIntent.setData(Uri.parse(mFacebookLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -102,7 +103,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openTwitterLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Twitter_Link)));
+        sendIntent.setData(Uri.parse(mTwitterLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -114,7 +115,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openInstagramLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_Instagram_Link)));
+        sendIntent.setData(Uri.parse(mInstagramLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -126,7 +127,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openLinkedInLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_LinkedIn_Link)));
+        sendIntent.setData(Uri.parse(mLinkedInLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
@@ -138,7 +139,7 @@ public class MainActivityViewModel extends BaseObservable {
     public void openGooglePlusLink(View view) {
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setData(Uri.parse(mContext.getString(R.string.JourneySound_GooglePlus_Link)));
+        sendIntent.setData(Uri.parse(mGooglePlusLink));
 
         try {
             mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));

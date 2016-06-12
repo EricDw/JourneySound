@@ -102,10 +102,10 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] E:\Workspace\Jo
 MERGED from [com.android.support:support-v4:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.databinding:adapters:1.1] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.1\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.databinding:library:1.1] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\library\1.1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:adapters:1.2] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.2] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-v4:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.databinding:library:1.1] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\library\1.1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.2] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-v4:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] E:\Workspace\JourneySound\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
