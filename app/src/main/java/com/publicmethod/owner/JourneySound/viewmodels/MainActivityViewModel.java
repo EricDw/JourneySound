@@ -19,8 +19,13 @@ import com.publicmethod.owner.JourneySound.R;
 public class MainActivityViewModel extends BaseObservable {
     private Context mContext;
 
-    private String mFacebookLink, mTwitterLink,
-            mInstagramLink, mLinkedInLink, mGooglePlusLink, mPhoneNumber;
+    private String mFacebookLink,
+            mTwitterLink,
+            mInstagramLink,
+            mLinkedInLink,
+            mGooglePlusLink,
+            mPhoneNumber,
+            mSoundCloudLink;
 
 
     public MainActivityViewModel(Context context) {
@@ -31,6 +36,7 @@ public class MainActivityViewModel extends BaseObservable {
         mLinkedInLink = context.getString(R.string.JourneySound_LinkedIn_Link);
         mPhoneNumber = context.getString(R.string.JourneySound_phoneNumber);
         mGooglePlusLink = context.getString(R.string.JourneySound_GooglePlus_Link);
+        mSoundCloudLink = context.getString(R.string.JourneySound_SoundCloud_Link);
     }
 
     public void callJourneySound(View view) {
@@ -148,4 +154,31 @@ public class MainActivityViewModel extends BaseObservable {
             Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
         }
     }
+    public void openSoundCloudLink(View view) {
+
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.setData(Uri.parse(mSoundCloudLink));
+
+        try {
+            mContext.startActivity(Intent.createChooser(sendIntent, mContext.getString(R.string.Open_link_chooser_title)));
+
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(mContext, R.string.Error_message_no_application, Toast.LENGTH_SHORT).show();
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

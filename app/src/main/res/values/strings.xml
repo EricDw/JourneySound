@@ -21,6 +21,8 @@
     <string name="play_store_link">https://play.google.com/store/apps/details?id=com.publicmethod.eric.JourneySound&amp;hl=en</string>
     <string name="play_store_link_bitly">http://bit.ly/JourneySound</string>
     <string name="JourneySound_GooglePlus_Link">https://plus.google.com/+JOURNEYSOUNDCANADA</string>
+    <string name="JourneySound_SoundCloud_Link">https://soundcloud.com/jouney-sound-canada</string>
+
 
     <!-- Phone Number-->
     <string name="JourneySound_phoneNumber">14167298018</string>
@@ -31,6 +33,7 @@
     <string name="Content_description_Image_button_Twitter">Follow Journey Sound on Twitter button</string>
     <string name="Content_description_Image_button_Instagram">Follow Journey Sound on Instagram button</string>
     <string name="Content_description_Image_button_Linkedin">Connect with Journey Sound on Linkedin button</string>
+    <string name="Content_description_Image_button_SoundCloud">Connect with Journey Sound on Sound Cloud button</string>
     <string name="Open_link_chooser_title">Open url with…</string>
     <string name="data_type_mime">text/plain</string>
     <string name="mailTo">mailto:</string>
@@ -59,5 +62,7 @@
          Flyers (Designing &amp; Program Invitations) \n
     </string>
     <string name="button_share_text">SHARE</string>
+    <string name="JourneySound_SoundCloud">JOURNEY SOUND</string>
+
 
 </resources>

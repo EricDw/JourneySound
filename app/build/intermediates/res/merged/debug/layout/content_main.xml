@@ -85,7 +85,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginStart="8dp"
                     android:columnCount="2"
-                    android:rowCount="8">
+                    android:rowCount="9">
 
 
                     <TextView
@@ -108,7 +108,6 @@
                         android:layout_column="1"
                         android:layout_row="2"
                         android:text="@string/JourneySound_Facebook"
-
                         />
 
                     <ImageButton
@@ -189,6 +188,25 @@
                         android:onClick="@{viewModel.openGooglePlusLink}"
                         app:srcCompat="@drawable/google_plus_box"
                         />
+
+                    <TextView
+                        style="@style/socialMediaItem"
+                        android:layout_column="1"
+                        android:layout_row="7"
+                        android:text="@string/JourneySound_SoundCloud"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/button_image_soundcloud"
+                        style="@style/GridViewImageButtonStyle"
+                        android:layout_column="0"
+                        android:layout_row="7"
+                        android:contentDescription="@string/Content_description_Image_button_SoundCloud"
+                        android:onClick="@{viewModel.openSoundCloudLink}"
+                        app:srcCompat="@drawable/soundcloud"
+                        />
+
                 </GridLayout>
 
 
